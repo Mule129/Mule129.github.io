@@ -1,0 +1,143 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+
+:root {
+    --text-b1: #222;
+    --text-b2: #333;
+    --text-b3: #444;
+
+    --white: white;
+
+    --main-color: rgb(73, 130, 255);
+    --sub-color: rgb(229, 255, 252);
+}
+
+.wrapper {
+    margin: 0;
+    max-width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    margin: 0;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #444;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+
+    overflow: hidden;
+}
+
+.text-h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-b1);
+
+    padding: 12px 0 12px 0;
+}
+
+.text-h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--text-b2);
+
+    padding: 8px 0 8px 0;
+}
+
+.text-h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--text-b2);
+    
+    padding: 4px 0 4px 0;
+}
+
+.tag {
+    background-color: var(--main-color);
+    border-radius: 20px;
+    padding: 8px;
+    gap: auto;
+
+    color: white;
+}
+
+.section-frame {
+    padding: 40px 0 40px 0;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    padding: 20px;
+
+    font-weight: 500;
+}
+
+.nav-under {
+    border-bottom: solid 2px var(--text-b2);
+}
+
+#home {
+    margin: 20px 0 20px 0;
+}
+
+
+#tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    gap: 12px;
+}
+
+#home-text {
+    gap: 12px;
+}
+
+#home-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    gap: auto;
+    justify-content: center;
+    align-items: center;
+
+    gap: 36px;
+}
+
+#home-img {
+    width: 320px;
+    border-radius: 300px;
+}
+
+.grid-frame {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-skil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+}
+
+.project-frame {
+    width: 280px;
+    padding: 20px;
+    margin: 20px;
+    border: #333 solid 1px;
+    border-radius: 20px;
+}

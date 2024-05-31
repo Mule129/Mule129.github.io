@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        $(document).ready(function() {
+            var status = 1;
+            $('#nav-home').click(function() {
+
+                $('#home').removeClass('hidden');
+                $('#project').addClass('hidden');
+                $('#area').addClass('hidden');
+
+                $('#nav-home').addClass('nav-under');
+                $('#nav-project').removeClass('nav-under');
+                $('#nav-area').removeClass('nav-under');
+            })
+            $('#nav-project').click(function() {
+                $('#home').addClass('hidden');
+                $('#project').removeClass('hidden');
+                $('#area').addClass('hidden');
+
+                $('#nav-home').removeClass('nav-under');
+                $('#nav-project').addClass('nav-under');
+                $('#nav-area').removeClass('nav-under');
+            })
+            $('#nav-area').click(function() {
+                $('#home').addClass('hidden');
+                $('#project').addClass('hidden');
+                $('#area').removeClass('hidden');
+
+                $('#nav-home').removeClass('nav-under');
+                $('#nav-project').removeClass('nav-under');
+                $('#nav-area').addClass('nav-under');
+            })
+        })
+    </script>
+    <title>Mule's Page</title>
+</head>
+<body>
+    <nav>
+        <span id="nav-home" class="nav-under">Home</span>
+        <span id="nav-project">Project</span>
+        <span id="nav-area">Area</span>
+    </nav>
+    <section class="wrapper">
+        <section id="home" class="section-frame">
+            <div id="home-info">
+                <div id="home">
+                    <div id="home-img"><img src="./assets/profile.png"></div>
+                    <div id="home-text">
+                        <div class="text-h1">Mule129</div>                
+                        <div id="tag-list">
+                            <div class="tag">Python</div>
+                            <div class="tag">AI</div>
+                            <div class="tag">Community Lead</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-h2">별 헤는 프로그래머 Mule129 입니다</div>
+                    <div>
+                        <div>강원대학교 멋쟁이사자처럼 12기 대표 2024.01~</div>
+                        <div>강원대학교 멋쟁이사자처럼 11기 수료 2023.03~2023.12</div>
+                        <div>강원대학교 컴퓨터공학과 재학중 2023.03~</div>
+                        <div>청수고등학교 졸업 2020.03~2023.02</div>
+                    </div>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+        <section id="project" class="hidden">
+            <div class="project-skil">
+                <div class="text-h2">Skil</div>
+                <div id="tag-list">
+                    <div class="tag">Python</div>
+                    <div class="tag">AI</div>
+                    <div class="tag">Web</div>
+                    <div class="tag">Server</div>
+                    <div class="tag">Hardware</div>
+                </div>
+            </div>
+            
+            <div class="text-h2">Project List</div>
+            <div class="grid-frame">
+                <div class="project-frame">
+                    <div class="text-h3">RNN pose traking game</div>
+                    <span>RNN 모델을 이용하여 몸 동작을 인식하여 게임 속 캐릭터를 움직일 수 있도록 한 프로젝트입니다.</span>
+                </div>
+                <div class="project-frame">
+                    <div class="text-h3">My Server</div>
+                    <span>linux, server hardware</span>
+                </div>
+                <div class="project-frame">
+                    <div class="text-h3">Community</div>
+                    <div>Programming Club</div>
+                    <div>Dev.KNU</div>
+                    <div>LikeLion</div>
+                </div>
+                <!-- <div class="project-frame">
+                    <div class="text-h3">Health Project</div>
+                    <div>배드민턴</div>
+                    <div>자전거</div>
+                </div> -->
+            </div>
+        </section>
+        <section id="area" class="hidden">
+            <div>
+                <span>Deep Sky</span>
+            </div>
+            <div>
+                <span>Food</span>
+            </div>
+        </section>
+    </section>
+    
+</body>
+</html>
