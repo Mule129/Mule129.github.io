@@ -42,9 +42,9 @@
 </head>
 <body>
     <nav>
-        <span id="nav-home" class="nav-under">Home</span>
-        <span id="nav-project">Project</span>
-        <span id="nav-area">Area</span>
+        <a id="nav-home" class="nav-under" href="#home">Home</a>
+        <a id="nav-project" href="#project">Project</a>
+        <a id="nav-area" href="#area">Area</a>
     </nav>
     <section class="wrapper">
         <section id="home" class="section-frame page">
@@ -108,11 +108,17 @@
             </div>
         </section>
         <section id="area" class="hidden page">
-            <div>
-                <span>Deep Sky</span>
-            </div>
-            <div>
-                <span>Food</span>
+            <div class="grid-frame">
+                <div>
+                    <div class="text-h2">Deep Sky</div>
+                    <div id="home-img"><img src="./assets/star2.jpeg"></div>
+                    <div>성운 관측을 위한 연습 사진입니다</div>
+                </div>
+                <div>
+                    <div class="text-h2">자전거</div>
+                    <div id="home-img"><img src="./assets/자전거.png"></div>
+                    <div>자전거를 타고 이동한 기록입니다</div>
+                </div>
             </div>
         </section>
     </section>

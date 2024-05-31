@@ -39,7 +39,7 @@ img {
 }
 
 .page {
-    
+
 }
 
 .text-h1 {
@@ -128,6 +128,7 @@ nav {
 .grid-frame {
     display: flex;
     flex-wrap: wrap;
+    gap: 40px;
 }
 
 .project-skil {
