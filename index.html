@@ -6,37 +6,24 @@
     <link rel="stylesheet" href="./index.css">
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script>
-        // $(document).ready(function() {
-        //     var status = 1;
-        //     $('#nav-home').click(function() {
-
-        //         $('#home').removeClass('hidden');
-        //         $('#project').addClass('hidden');
-        //         $('#area').addClass('hidden');
-
-        //         $('#nav-home').addClass('nav-under');
-        //         $('#nav-project').removeClass('nav-under');
-        //         $('#nav-area').removeClass('nav-under');
-        //     })
-        //     $('#nav-project').click(function() {
-        //         $('#home').addClass('hidden');
-        //         $('#project').removeClass('hidden');
-        //         $('#area').addClass('hidden');
-
-        //         $('#nav-home').removeClass('nav-under');
-        //         $('#nav-project').addClass('nav-under');
-        //         $('#nav-area').removeClass('nav-under');
-        //     })
-        //     $('#nav-area').click(function() {
-        //         $('#home').addClass('hidden');
-        //         $('#project').addClass('hidden');
-        //         $('#area').removeClass('hidden');
-
-        //         $('#nav-home').removeClass('nav-under');
-        //         $('#nav-project').removeClass('nav-under');
-        //         $('#nav-area').addClass('nav-under');
-        //     })
-        // })
+        $(document).ready(function() {
+            var status = 1;
+            $('#nav-home').click(function() {
+                $('#nav-home').addClass('nav-under');
+                $('#nav-project').removeClass('nav-under');
+                $('#nav-area').removeClass('nav-under');
+            })
+            $('#nav-project').click(function() {
+                $('#nav-home').removeClass('nav-under');
+                $('#nav-project').addClass('nav-under');
+                $('#nav-area').removeClass('nav-under');
+            })
+            $('#nav-area').click(function() {
+                $('#nav-home').removeClass('nav-under');
+                $('#nav-project').removeClass('nav-under');
+                $('#nav-area').addClass('nav-under');
+            })
+        })
         
         $(document).ready(function() {
             const pages = $('.page');
